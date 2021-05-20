@@ -11,11 +11,13 @@
       $_SESSION["amount"], $_SESSION["comments"]);
     $stmt->execute();
     $result = $stmt->fetch();
-    $successConfirmation = $result['successConfirmation'];
-    if ($successConfirmation > 0) {
+    // the row count will be "1" if the procedure was successful. Echo "success" to tell the JS to redirect to the thank you page.
+    if ($result == "1") {
+      // clear the user's variables now that they've been used.
+      session_destroy();
       echo "success";
     } else {
-      echo "fail";
+      echo $result;
     }
   }
   catch(Exception $e) {

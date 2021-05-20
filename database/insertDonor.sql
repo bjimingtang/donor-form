@@ -47,5 +47,5 @@ BEGIN
          paymentAmount,
 		 comments);
 	#set successConfirmation
-    set successConfirmation = row_count();
+    select row_count();
 END
