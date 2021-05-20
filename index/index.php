@@ -76,22 +76,27 @@
   <script src="../js/countryFillIn.js"></script>
   <script>
     // autofill any fields that are already set in the php session
-    document.getElementById("fname").value = "<?= $_SESSION["fname"]?>";
-    document.getElementById("lname").value = "<?= $_SESSION["lname"]?>";
-    document.getElementById("address").value = "<?= $_SESSION["address"]?>";
-    document.getElementById("city").value = "<?= $_SESSION["city"]?>";
-    document.getElementById("state").value = "<?= $_SESSION["state"]?>";
-    document.getElementById("postcode").value = "<?= $_SESSION["postcode"]?>";
-    document.getElementById("phone").value = "<?= $_SESSION["phone"]?>";
-    document.getElementById("email").value = "<?= $_SESSION["email"]?>";
-    document.getElementById("contact").value = "<?= $_SESSION["contact"]?>";
-    document.getElementById("payment").value = "<?= $_SESSION["payment"]?>";
-    document.getElementById("frequency").value = "<?= $_SESSION["frequency"]?>";
-    document.getElementById("amount").value = "<?= $_SESSION["amount"]?>";
-    document.getElementById("comments").value = "<?= $_SESSION["comments"]?>";
-    // try to set country after countries load
-    setTimeout(function () {
-        document.getElementById("country").value = "<?= $_SESSION["country"]?>";
-    }, 1000);
+    try {
+      document.getElementById("fname").value = "<?= $_SESSION["fname"]?>";
+      document.getElementById("lname").value = "<?= $_SESSION["lname"]?>";
+      document.getElementById("address").value = "<?= $_SESSION["address"]?>";
+      document.getElementById("city").value = "<?= $_SESSION["city"]?>";
+      document.getElementById("state").value = "<?= $_SESSION["state"]?>";
+      document.getElementById("postcode").value = "<?= $_SESSION["postcode"]?>";
+      document.getElementById("phone").value = "<?= $_SESSION["phone"]?>";
+      document.getElementById("email").value = "<?= $_SESSION["email"]?>";
+      document.getElementById("contact").value = "<?= $_SESSION["contact"]?>";
+      document.getElementById("payment").value = "<?= $_SESSION["payment"]?>";
+      document.getElementById("frequency").value = "<?= $_SESSION["frequency"]?>";
+      document.getElementById("amount").value = "<?= $_SESSION["amount"]?>";
+      document.getElementById("comments").value = "<?= $_SESSION["comments"]?>";
+      // try to set country after countries load
+      setTimeout(function () {
+          document.getElementById("country").value = "<?= $_SESSION["country"]?>";
+      }, 1000);
+    } catch (e) {
+
+    }
+
   </script>
 </html>
