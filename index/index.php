@@ -67,8 +67,8 @@
       <label for="comments">Comments:</label><br>
       <textarea id="comments" name="comments"></textarea><br>
 
-      <input type="submit">Review</input>
+      <input type="submit" value="Review" />
     </form>
-    <script src="js/scripts.js"></script>
+    <script src="../js/countryFillIn.js"></script>
   </body>
 </html>
