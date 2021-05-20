@@ -6,7 +6,7 @@ function countryFillIn(){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var countryArray = this.responseText.split("\n");
+      var countryArray = this.responseText.split("\r\n");
       var countrySelect = document.getElementById("country");
       for (var country in countryArray) {
         var option = document.createElement("option");
