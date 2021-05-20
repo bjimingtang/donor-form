@@ -5,4 +5,4 @@ create table donationDB.userInformation (firstName varchar(255), lastName varcha
 	postCode varchar(255), phone varchar(255), 
 	email varchar(255), preferredContact varchar(255), 
 	currency varchar(255), frequency varchar(255), 
-	paymentAmount varchar(255), comments longtext);
+	paymentAmount DECIMAL(65,2), comments longtext);
