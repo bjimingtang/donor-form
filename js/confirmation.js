@@ -6,7 +6,7 @@ function confirmSubmission(fileName){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var response = this.responseText;
+      window.location.href = '../index/thankyou.php';
     }
   };
   xhttp.open("POST", "../php/confirmSubmission.php", true);
@@ -21,7 +21,7 @@ function returnToStart(fileName){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var response = this.responseText;
+      window.location.href = '../index/cancel.php';
     }
   };
   xhttp.open("POST", "../php/returnToStart.php", true);

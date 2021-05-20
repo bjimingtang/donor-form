@@ -1,5 +1,16 @@
 <?php
   session_start();
+  // confirm that the variables are set
+  if (!isset($_SESSION["fname"]) || !isset($_SESSION["lname"]) ||
+    !isset($_SESSION["address"]) || !isset($_SESSION["city"]) ||
+    !isset($_SESSION["state"]) || !isset($_SESSION["country"]) ||
+    !isset($_SESSION["postcode"]) || !isset($_SESSION["phone"]) ||
+    !isset($_SESSION["email"]) || !isset($_SESSION["contact"]) ||
+    !isset($_SESSION["payment"]) || !isset($_SESSION["frequency"]) ||
+    !isset($_SESSION["amount"]) || !isset($_SESSION["comments"])) {
+    // go back to index if a variable is not found
+    header("Location:index.php");
+  }
 ?>
 <!DOCTYPE html>
 

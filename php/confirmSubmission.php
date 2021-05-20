@@ -17,8 +17,7 @@
     // $_SESSION["amount"] = $_POST["amount"];
     // $_SESSION["comments"] = $_POST["comments"];
 
-    // redirect to thank you page
-    header("Location:../index/thankyou.php");
+
   }
   catch(Exception $e) {
     echo 'Message: ' . $e->getMessage();
