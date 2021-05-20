@@ -1,11 +1,4 @@
 /*
-Function: readFile
-Read in the specified file from the server
-*/
-function readFile(fileName){
-
-}
-/*
 Function: countryFillIn
 Fill in the country selector element using the countries.txt file under resources
 */
