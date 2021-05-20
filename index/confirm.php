@@ -34,7 +34,8 @@
 
     <!-- Confirmation -->
     Is the above information what you want to submit?
-    <button onclick="submitInformation()">Yes, it is!</button>
+    <br>
+    <button onclick="confirmSubmission()">Yes, it is!</button>
     <button onclick="returnToStart()">Nope, let me go back!</button>
 
     <script src="../js/confirmation.js"></script>
