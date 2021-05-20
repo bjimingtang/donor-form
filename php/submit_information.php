@@ -1,6 +1,8 @@
 <?php
   try {
     session_start();
+    // take the user inputs and store them in the session
+    // thankfully, the HTML form already validates email and payment amount
     $_SESSION["fname"] = $_POST["fname"];
     $_SESSION["lname"] = $_POST["lname"];
     $_SESSION["address"] = $_POST["address"];

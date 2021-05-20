@@ -16,19 +16,27 @@
   </head>
 
   <body>
+    <!-- display the user's information -->
     <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
-    <p>First name: <?= $_SESSION["fname"] ?></p>
+    <p>Last name: <?= $_SESSION["lname"] ?></p>
+    <p>Address: <?= $_SESSION["address"] ?></p>
+    <p>City: <?= $_SESSION["city"] ?></p>
+    <p>State: <?= $_SESSION["state"] ?></p>
+    <p>Country: <?= $_SESSION["country"] ?></p>
+    <p>Post code: <?= $_SESSION["postcode"] ?></p>
+    <p>Phone: <?= $_SESSION["phone"] ?></p>
+    <p>Email: <?= $_SESSION["email"] ?></p>
+    <p>Preferred contact method: <?= $_SESSION["contact"] ?></p>
+    <p>Payment currency: <?= $_SESSION["payment"] ?></p>
+    <p>Payment frequency: <?= $_SESSION["frequency"] ?></p>
+    <p>Payment amount: <?= $_SESSION["amount"] ?></p>
+    <p>Comments: <?= $_SESSION["comments"] ?></p>
+
+    <!-- Confirmation -->
+    Is the above information what you want to submit?
+    <button onclick="submitInformation()">Yes, it is!</button>
+    <button onclick="returnToStart()">Nope, let me go back!</button>
+
+    <script src="../js/confirmation.js"></script>
   </body>
 </html>
