@@ -1,6 +1,8 @@
 <?php
   try {
     session_start();
+    require_once 'database.php';
+
     // store the user info in MySQL
     // $_SESSION["fname"] = $_POST["fname"];
     // $_SESSION["lname"] = $_POST["lname"];
@@ -17,7 +19,7 @@
     // $_SESSION["amount"] = $_POST["amount"];
     // $_SESSION["comments"] = $_POST["comments"];
 
-
+    
   }
   catch(Exception $e) {
     echo 'Message: ' . $e->getMessage();
