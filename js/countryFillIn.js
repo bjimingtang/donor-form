@@ -14,7 +14,13 @@ function countryFillIn(){
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var countryArray = this.responseText.split("\n");
-      console.log(countryArray);
+      var countrySelect = document.getElementById("country");
+      for (var country in countryArray) {
+        var option = document.createElement("option");
+        option.value = countryArray[country];
+        option.text = countryArray[country];
+        countrySelect.add(option);
+      }
     }
   };
   xhttp.open("POST", "../resources/countries.txt", true);
