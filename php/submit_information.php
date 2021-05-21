@@ -7,6 +7,18 @@
       header("Location:../index/index.php");
       exit();
     }
+    // don't let blank submissions in
+    if ($_POST["fname"] == "" || $_POST["lname"] == "" ||
+      $_POST["address"] == "" || $_POST["city"] == "" ||
+      $_POST["state"] == "" || $_POST["country"] == "" ||
+      $_POST["postcode"] == "" || $_POST["phone"] == "" ||
+      $_POST["email"] == "" || $_POST["contact"] == "" ||
+      $_POST["payment"] == "" || $_POST["frequency"] == "" ||
+      $_POST["amount"] == "") {
+      echo "<script>alert('Blank inputs!')</script>";
+      header("Location:../index/index.php");
+      exit();
+    }
     // take the user inputs and store them in the session
     $_SESSION["fname"] = $_POST["fname"];
     $_SESSION["lname"] = $_POST["lname"];
