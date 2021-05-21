@@ -11,11 +11,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insertDonor`(in firstName varchar(2
 								in currency varchar(255), 
                                 in frequency varchar(255),
 								in paymentAmount DECIMAL(65,2), 
-                                in comments longtext,
-                                out successConfirmation int)
+                                in comments longtext)
 BEGIN
-	#initialize successConfirmation
-	set successConfirmation = 0;
 	insert into
 		userInformation (firstName, 
 						 lastName, 

@@ -1,8 +1,13 @@
 <?php
   try {
     session_start();
+    // validate the email on PHP
+    if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+      echo "<script>alert('Invalid email format!')</script>";
+      header("Location:../index/index.php");
+      exit();
+    }
     // take the user inputs and store them in the session
-    // thankfully, the HTML form already validates email and payment amount
     $_SESSION["fname"] = $_POST["fname"];
     $_SESSION["lname"] = $_POST["lname"];
     $_SESSION["address"] = $_POST["address"];

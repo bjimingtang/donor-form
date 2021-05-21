@@ -2,7 +2,7 @@
 Function: confirmSubmission
 Use an ajax call to submit the information in the current session
 */
-function confirmSubmission(fileName){
+function confirmSubmission(){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -22,7 +22,7 @@ function confirmSubmission(fileName){
 Function: returnToStart
 Use an ajax call to destroy the session and return to the start
 */
-function returnToStart(fileName){
+function returnToStart(){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
