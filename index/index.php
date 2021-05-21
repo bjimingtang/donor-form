@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <form action="../php/submit_information.php" method="post">
+    <form action="../php/submit_information.php" method="post" class="infobox">
       <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname" required><br>
 

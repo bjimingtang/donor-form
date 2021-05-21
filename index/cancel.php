@@ -16,11 +16,14 @@
   </head>
 
   <body>
-    <!-- thank the user -->
-    <p>Thank you for considering donating to us!</p>
+    <div class="infobox">
+      <!-- thank the user -->
+      <p>Thank you for considering donating to us!</p>
 
-    <!-- return to start link -->
-    <a href="index.php">Click here to return to the start</a>
+      <!-- return to start link -->
+      <a href="index.php">Click here to return to the start</a>
+    </div>
+
 
     <script src="../js/confirmation.js"></script>
   </body>

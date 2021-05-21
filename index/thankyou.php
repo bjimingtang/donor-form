@@ -17,10 +17,12 @@
 
   <body>
     <!-- thank the user -->
-    <p>Thank you for donating! One of our representatives will be in touch shortly!</p>
+    <div class="infobox">
+      <p>Thank you for donating! One of our representatives will be in touch shortly!</p>
 
-    <!-- return to start link -->
-    <a href="index.php">Click here to return to the start</a>
+      <!-- return to start link -->
+      <a href="index.php">Click here to return to the start</a>
+    </div>
 
     <script src="../js/confirmation.js"></script>
   </body>
